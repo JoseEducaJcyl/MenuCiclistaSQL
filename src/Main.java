@@ -163,6 +163,7 @@ public class Main {
             
             // Obtener el siguiente ID disponible
             String sql_id = "SELECT MAX(id_ciclista) AS nuevo_id FROM ciclista";
+            int nuevo_id = 0;
             try (Statement stmt = conn.createStatement();
                  ResultSet rs = stmt.executeQuery(sql_id)) {
                 if (rs.next()) {
