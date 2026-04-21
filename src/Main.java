@@ -62,7 +62,6 @@ public class Main {
     
     // ==================== MÉTODO ACTUALIZAR DATOS ====================
     public static void actualizarDatos(Scanner sc, String url, String usuario, String contraseña) {
-        sc = new Scanner(System.in);
         System.out.println("Ingrese el id del ciclista a actualizar: ");
         int id = sc.nextInt();
         sc.nextLine();
@@ -122,7 +121,6 @@ public class Main {
     // ==================== MÉTODO INSERTAR DATOS ====================
     public static void insertarDatos(Scanner sc, String url, String usuario, String contraseña) {
         int id_equipo_numero = 0;
-        sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del ciclista: ");
         String nombre = sc.nextLine();
         System.out.println("Ingrese la nacionalidad del ciclista: ");
@@ -163,7 +161,6 @@ public class Main {
     
     // ==================== MÉTODO ELIMINAR DATOS ====================
     public static void eliminarDatos(Scanner sc, String url, String usuario, String contraseña) {
-        sc = new Scanner(System.in);
         System.out.println("Ingrese el id del ciclista a eliminar: ");
         int id_equipo = sc.nextInt();
         
